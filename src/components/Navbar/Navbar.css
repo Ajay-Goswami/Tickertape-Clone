@@ -1,0 +1,137 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #151e28;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Adjust the navbar position */
+.navbar-wrapper {
+  background-color: #151e28;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3; /* Set a higher z-index to ensure visibility */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  cursor: pointer;
+}
+
+.logo:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown a {
+  display: block;
+  color: #151e28;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.navbar-search {
+  width: 300px; /* Fixed width for the search box */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-buttons {
+  margin-right: 20px;
+}
+
+.login-dropdown {
+  position: relative;
+}
+
+.login-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-dropdown:hover .dropdown {
+  display: block;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: white;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-logo,
+  .navbar-search,
+  .navbar-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-search {
+    margin: 10px 0;
+  }
+
+  .social-buttons,
+  .login-dropdown {
+    margin: 10px 0;
+  }
+}

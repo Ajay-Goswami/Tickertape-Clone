@@ -1,0 +1,40 @@
+.stock-ticker {
+  width: 100%;
+  overflow: hidden;
+  color: #f3f3f3;
+  background-color: #151e28;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.stock-item {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.stock-price {
+  margin-left: 5px;
+}
+
+.increase {
+  color: green;
+}
+
+.decrease {
+  color: red;
+}

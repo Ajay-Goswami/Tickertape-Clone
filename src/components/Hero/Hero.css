@@ -1,0 +1,98 @@
+/* Hero container */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  overflow-x: hidden;
+  background-color: #151e28;
+}
+
+/* Hero content */
+.hero-content {
+  max-width: 8vw;
+  text-align: center;
+  padding-top: 8vw;
+  color: white;
+  /* margin-bottom: 20px; */
+}
+
+.hero-content-heading {
+  font-size: 4vw;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.hero-content-desc {
+  font-size: 20px;
+  color: #ffffff;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* Rating container */
+.rating-container {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.rating-desc {
+  font-size: 16px;
+}
+
+/* Download button */
+.app-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.app-download:hover {
+  background-color: #0056b3;
+}
+
+/* Hero image */
+.hero-image {
+  width: 100%;
+}
+.hero-image img {
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    text-align: left;
+    margin-bottom: 0;
+    max-width: 50%;
+  }
+
+  .hero-image {
+    margin-top: 0;
+    max-width: 50%;
+    align-self: flex-start;
+  }
+}
