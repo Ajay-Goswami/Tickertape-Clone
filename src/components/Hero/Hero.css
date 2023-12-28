@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2vw;
+  padding: 7vw;
   overflow-x: hidden;
+  border-radius: 5vw;
   background-color: #151e28;
 }
 
@@ -12,9 +13,21 @@
 .hero-content {
   max-width: 8vw;
   text-align: center;
-  padding-top: 8vw;
+  padding-top: 2vw;
   color: white;
   /* margin-bottom: 20px; */
+}
+
+.hero-content a {
+  display: flex;
+  max-width: 400px;
+  gap: 2vw;
+  color: white;
+  background-color: #1c2631;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .hero-content-heading {
@@ -34,13 +47,12 @@
 .rating-container {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
 }
 
 .rating {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .rating img {

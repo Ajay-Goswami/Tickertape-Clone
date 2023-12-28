@@ -24,9 +24,17 @@ const Navbar = () => {
         <div className="navbar-logo">
           {/* Logo with Dropdown */}
           <div className="logo">
-            Your Logo
+            Tickertape
             {/* Dropdown */}
             <div className="dropdown">
+              <ul>
+                <li>
+                  <a href="">Stock</a>
+                  <a href="">ETF</a>
+                  <a href="">Gold</a>
+                  <a href="">Stock Screener</a>
+                </li>
+              </ul>
               {/* Dropdown Content */}
               {/* Links: Stock, ETF, Gold, Stock Screener, etc. */}
             </div>
